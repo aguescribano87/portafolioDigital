@@ -1,0 +1,10 @@
+.drawerToggleButton {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 1100px){
+    .drawerToggleButton{
+      display: none;
+    }
+  }

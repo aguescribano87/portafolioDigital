@@ -1,0 +1,24 @@
+.collapse-button {
+    display: block;
+}
+
+.collapse-content.collapsed {
+    display: none;
+}
+
+.collapsed-content.expanded {
+    display: block;
+}
+
+.collapse-div {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 0;
+    border-bottom: solid 2px black;
+    font-size: 1.8rem;
+    font-weight:lighter;
+}
+.arrow{
+    float: right;
+}
