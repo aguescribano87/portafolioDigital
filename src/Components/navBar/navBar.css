@@ -12,6 +12,7 @@
 }
 
 .nav-title {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,11 +40,11 @@
 .nav-menu-item {
     padding: 2px 2px;
     margin: 0 5px;
-    font-weight: bold;
     border-bottom: solid 2px transparent;
 }
 
 .nav-menu-item:hover {
+    font-weight: bold;
     border-bottom: solid 2px black;
 }
 

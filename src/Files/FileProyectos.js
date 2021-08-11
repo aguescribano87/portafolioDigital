@@ -31,8 +31,8 @@ export const FileProyectos = [
         tecno: ["React JS", "CSS"],
         links: [
             {
-                github: "https://github.com/aguescribano87/e-mkt",
-                host: "https://e-mkt-aff75.web.app/"
+                github: "https://github.com/aguescribano87/portafolioDigital.git",
+                host: "https://agustin-escribano.web.app/"
             }
         ]
     }

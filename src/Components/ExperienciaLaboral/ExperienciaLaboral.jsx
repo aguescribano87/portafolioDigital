@@ -6,7 +6,7 @@ export const ExperienciaLaboral = () => {
 
     return (
         <div className="contenedor-gral">
-            <div className="incio">
+            <div className="incio animate__animated animate__pulse">
                 <h1 className="title">Esperiencia Laboral</h1>
                 {ExpLaboral.map((exp) =>
                     <Collapse collapsed={true} title={exp.empresa}>

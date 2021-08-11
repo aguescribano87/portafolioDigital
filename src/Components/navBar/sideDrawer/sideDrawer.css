@@ -9,10 +9,11 @@
     margin: 0;
     padding: 0;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.5s ease-out;
+    list-style-type: none;
 }
 
 .sideDrawer.open {
@@ -29,8 +30,13 @@
     border-bottom: solid 2px transparent;
 }
 
-.item-sideDrawer:hover, .item-sideDrawer:active {
+.item-sideDrawer:hover {
     border-bottom: solid 2px black;
     font-weight: bold;
     transition: 0.5s;
-  }
+}
+
+.item-sideDrawer-active {
+    font-weight: bold;
+    border-bottom: solid 2px black;
+}

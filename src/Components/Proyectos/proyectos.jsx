@@ -8,7 +8,7 @@ export const Proyectos = () => {
     return (
         <Fragment>
             <div className="contenedor-gral">
-                <div className="incio">
+                <div className="incio animate__animated animate__pulse">
                     <h1 className="title">Proyectos</h1>
                     {FileProyectos.map((p) =>
                         <Collapse collapsed={true} title={p.title}>

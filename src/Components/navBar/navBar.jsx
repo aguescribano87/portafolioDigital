@@ -1,29 +1,34 @@
 import React from 'react'
 import './navBar.css'
 import { Categorias } from '../../Files/Categorias'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { DrawerToggleButton } from './drawerToggleButton/drawerToggleButton'
 
-export const NavBar = ({ClickHandler}) => {
+export const NavBar = ({ ClickHandler }) => {
 
 
     return (
         <nav className="nav-container">
-            <h1 className="nav-title">AGUSTIN
-                <h1 className="nav-title2">ESCRIBANO</h1>
-            </h1>
+            <Link to="/">
+                <h1 className="nav-title">AGUSTIN
+                    <h1 className="nav-title2">ESCRIBANO</h1>
+                </h1>
+            </Link>
             <ul className="nav-menu-cat">
-                <Link to="/">
-                    <li className="nav-menu-item">Inicio</li>
-                </Link>
-                {Categorias.map((cat) =>
-                    <Link to={`/menu/${cat.id}`}>
-                        <li className="nav-menu-item">{cat.title}</li>
-                    </Link>
+                {Categorias.map((cat) => {
+                    if (cat.id !== "inicio"){
+                        return (
+                            <NavLink className="nav-menu-item" activeClassName="item-sideDrawer-active" to={`/menu/${cat.id}`}>
+                                <li>{cat.title}</li>
+                            </NavLink>
+                        )
+                    }
+                    return ""
+                }
                 )}
 
             </ul>
-            <DrawerToggleButton ClickHandler={ClickHandler}/>
+            <DrawerToggleButton ClickHandler={ClickHandler} />
         </nav>
     )
 }

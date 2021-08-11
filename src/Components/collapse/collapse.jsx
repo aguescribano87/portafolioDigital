@@ -1,10 +1,11 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import './collapse.css'
 import up from '../../Img/up.svg'
 import down from '../../Img/down.svg'
 
 export const Collapse = ({ collapsed, children, title }) => {
     const [isCollapsed, setIsCollapsed] = useState(collapsed);
+    const collapseRef = useRef()
 
     return (
         <Fragment>
@@ -12,11 +13,14 @@ export const Collapse = ({ collapsed, children, title }) => {
                 className="collapse-div"
                 onClick={() => setIsCollapsed(!isCollapsed)}
             >
-                {title}{isCollapsed ? <img className="arrow" src={down} alt="arrow" /> : <img className="arrow" src={up} alt="arrow" />}
+                {title}{isCollapsed ?
+                    <img className="arrow animate__animated animate__flipInX" src={down} alt="arrow-down" /> :
+                    <img className="arrow animate__animated animate__rotateIn" src={up} alt="arrow-up" />}
             </div>
             <div
-                className={`collapse-content ${isCollapsed ? 'collapsed' : 'expanded'}`}
-                aria-expanded={isCollapsed}
+                className='collapse-content'
+                ref={collapseRef}
+                style={isCollapsed ? { height: "0px" } : {height: collapseRef.current.scrollHeight + "px"}}
             >
                 {children}
                 <hr />

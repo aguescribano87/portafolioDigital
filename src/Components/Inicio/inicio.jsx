@@ -9,7 +9,7 @@ export const Inicio = () => {
         <Fragment>
             <Banner banner={bannerFotoInicio} />
             <div className="contenedor-gral">
-                <div className="incio">
+                <div className="incio animate__animated animate__pulse">
                     <h1 className="title">Hola, Mi Nombre es Agustin Escribano</h1>
                     <h2 className="sub_title-incio">Soy Front-End Developer</h2>
                     <p className="parrafo-incio">

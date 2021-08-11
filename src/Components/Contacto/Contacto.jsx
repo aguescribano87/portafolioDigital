@@ -5,7 +5,7 @@ export const Contacto = () => {
     console.log(<a href="https://github.com/aguescribano87"><Button value="GitHub" /></a>)
     return (
         <div className="contenedor-gral">
-            <div className="incio">
+            <div className="incio animate__animated animate__pulse">
                 <h1 className="title">Contacto</h1>
                 <h2>Teléfono</h2>
                 <p>0351-157347333</p>
