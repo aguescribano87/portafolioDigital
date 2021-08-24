@@ -2,6 +2,7 @@ import React from "react"
 import './sideDrawer.css'
 import { Categorias } from '../../../Files/Categorias'
 import { NavLink } from "react-router-dom"
+import { Button } from "../../button/button"
 
 export const SideDrawer = ({ ClickHandler, sideDrawerOpen }) => {
 
@@ -21,7 +22,12 @@ export const SideDrawer = ({ ClickHandler, sideDrawerOpen }) => {
                     return ""
                 }
                 )}
-
+                <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/14hzy_TeGuEPvp4dubwmCQmZerAAqkMkb/view?usp=sharing">
+                    <Button value="Descargar CV" />
+                </a>
             </ul>
         </nav>
     )

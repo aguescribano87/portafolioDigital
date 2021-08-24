@@ -10,7 +10,7 @@ export const Habilidades = () => {
                 <h2>Desarrollo WEB</h2>
                 {Skills.map((skill) => <p className="item-proyectos">{skill}</p>)}
                 <h2>Nivel de Inglés</h2>
-                <p className="item-proyectos">Intermedio - Alto</p>
+                <p className="item-proyectos">Intermedio</p>
 
 
             </div>

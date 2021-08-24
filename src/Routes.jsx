@@ -7,7 +7,6 @@ import { Inicio } from './Components/Inicio/inicio'
 import { Menu } from './Components/Menu/menu'
 import { SideDrawer } from './Components/navBar/sideDrawer/sideDrawer'
 import { BackgroundModal } from './Components/backgroundModal/backgroundModal'
-import {AdminPanel} from './Components/AdminPanel/adminPanel'
 
 export const Routes = () => {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
@@ -23,7 +22,6 @@ export const Routes = () => {
                 <div className="App">
                     <Route exact path="/" children={<Inicio />} />
                     <Route path="/menu/:id" children={<Menu />} />
-                    <Route path="/admin/:id" children={<AdminPanel />} />
                 </div>
                 <Footer />
             </Switch>

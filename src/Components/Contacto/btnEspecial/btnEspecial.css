@@ -1,0 +1,38 @@
+.cont-BtnEspecial {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    width: 200px;
+    margin: 5px 0;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
+    transition: transform 0.5s;
+}
+
+.img-BtnEspecial {
+    width: 30px;
+    padding-right: 5px;
+}
+
+.title-BtnEspecial {
+    margin: 0;
+}
+
+.cont-BtnEspecial:hover {
+    transform: scale(1.1);
+}
+
+
+.whatsapp {
+    background-color: #1ed742;
+}
+
+.github {
+    background-color: #000000;
+}
+
+.linkedin {
+    background-color: #0077b7;
+}

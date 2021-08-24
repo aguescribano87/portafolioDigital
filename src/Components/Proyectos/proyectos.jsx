@@ -16,6 +16,7 @@ export const Proyectos = () => {
                                 {p.func ? <div className="menu-proyectos"><h3>Funcionalidades</h3> {p.func.map((i) => <p className="item-proyectos">{i}</p>)} </div> : ""}
                                 {p.tecno ? <div className="menu-proyectos"><h3>Tecnologías</h3> {p.tecno.map((i) => <p className="item-proyectos">{i}</p>)} </div> : ""}
                                 {p.links.map((l) => <a href={l.github}><Button value="GitHub" /></a>)}
+                                <br />
                                 {p.links.map((l) => l.host ? <a href={l.host}><Button value="Host" /></a> : "")}
                             </div>
                         </Collapse>
