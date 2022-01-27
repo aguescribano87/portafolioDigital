@@ -1,5 +1,12 @@
 export const ExpLaboral = [
     {
+        empresa:"SERSOMEDIA",
+        tiempo:"13/09/2021-Actualidad",
+        cargo:"Frontend Web Developer",
+        descript: "HTML, React JS, VUEXY, CSS, Redux"
+        
+    },
+    {
         empresa:"AES MARKETING",
         tiempo:"2018-2020",
         cargo:"Dueño"

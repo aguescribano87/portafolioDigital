@@ -25,7 +25,7 @@ export const SideDrawer = ({ ClickHandler, sideDrawerOpen }) => {
                 <a
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://drive.google.com/file/d/14hzy_TeGuEPvp4dubwmCQmZerAAqkMkb/view?usp=sharing">
+                    href="https://drive.google.com/file/d/17vyghim5dohz45kaEOFKAZ2fuMzL7Uw2/view?usp=sharing">
                     <Button value="Descargar CV" />
                 </a>
             </ul>
