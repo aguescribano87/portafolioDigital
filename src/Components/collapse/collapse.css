@@ -6,7 +6,7 @@
     border-bottom: solid 2px black;
     font-size: 1.8rem;
     font-weight: lighter;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 }
 
 .arrow {
@@ -20,5 +20,5 @@
 }
 
 .collapse-div:hover {
-    transform: scale(1.1);
+    transform: scale(1.015);
 }

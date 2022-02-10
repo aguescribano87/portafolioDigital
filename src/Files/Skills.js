@@ -4,5 +4,7 @@ export const Skills = [
     "CSS",
     "HTML",
     "Jquery",
-    "Firebase"
+    "Firebase",
+    'Reactstrap',
+    'Redux'
 ]
